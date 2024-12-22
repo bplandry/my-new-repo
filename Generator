@@ -1,5 +1,31 @@
-<! DOCTYPE html>
-<html lang=en>
-<head>
-<h1> SKEMS PCR Generator </h1>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="./style.css" rel="stylesheet" />
+        <title>SKEMS PCR Generator</title>
+    </head>
+
+    <body>
+        <h1>
+            <div id="Title Text">SKEMS PCR Generator</div>
+        </h1>
+        <div id="textbox">
+            <p>
+                S:
+            </p>
+            <fieldset>
+              
+                <div>
+                  <input type="radio" id="P1" name="ambulance" value="P1"  />
+                  <label for="P1">SKEMS P1 dispatched to:</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="P3" name="ambulance" value="P3" />
+                  <label for="P3">SKEMS P3 dispatched to:</label>
+                </div>
+              
+              </fieldset>
+        </div>
+    </body>
+</html>
