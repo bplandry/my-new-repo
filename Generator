@@ -443,8 +443,8 @@
                                      4 Lead ECG obtained
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="EKG" value="&amp; 12 Lead ECG obtained"/>
-                                     &amp; 12 Lead ECG obtained
+                                    <input type="checkbox" name="EKG" value="&; 12 Lead ECG obtained"/>
+                                     &; 12 Lead ECG obtained
                                 </label>
                                 <label>
                                     <input type="checkbox" name="EKG" value="Manual interpretation"/>
@@ -688,7 +688,7 @@
                             <option value="Rhode Island Hospital.">Rhode Island Hospital.</option>
                             <option value="Hasbro Hospital.">Hasbro Hospital.</option>
                             <option value="Newport Hospital.">Newport Hospital.</option>
-                            <option value="Women&amp;Infants Hospital.">Women&amp;Infants Hospital.</option>
+                            <option value="Women&Infants Hospital.">Women&Infants Hospital.</option>
                         </select>
                         <br>
                         <span class="checkbox soapnote-input multiline" name="choice" data-type="checkboxes">
@@ -815,16 +815,9 @@
                         <textarea id="soapnote-result" class="soapnote-result exclude" cols="80" rows="12" readonly="readonly" autocomplete="off"></textarea>
                         <div id="soapnote-result-buttons">
                             <button class="btn btn-outline-secondary copybtn" title="Copy the result to Clipboard" data-bs-toggle="tooltip" data-bs-trigger="manual" data-bs-title="Copied" data-clipboard-target="#soapnote-result">Copy to Clipboard</button>
-                            <button id="mail-result-btn" class="btn btn-outline-secondary" title="Send the result via email" data-mailto="" data-subject="EMS509">Mail</button>
                             <div class="dropdown d-inline-block">
                                 <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Export </button>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <button id="save-csv-btn" class="btn btn-outline-secondary dropdown-item">Save to CSV file</button>
-                                    </li>
-                                    <li>
-                                        <button id="show-csv-btn" class="btn btn-outline-secondary dropdown-item">Show CSV data</button>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
