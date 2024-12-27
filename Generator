@@ -3,6 +3,13 @@
     <head>
         <title>SKEMS PCR Generator</title>
     </head>
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML = 
+                        document.getElementById("user_input").value;
+        }
+      </script>
+    
 <body>
                     <form id="soapnote-form" autocomplete="off">
                         S:
@@ -810,6 +817,14 @@
                             </ul>
                         </div>
                     </div>
+  <form>
+    <label><b>Enter a Message</b></label>
+    <input type="text" name="message" id="user_input">
+  </form>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your input: </label>
+  <p><span id='display'></span></p>
                     <div id="soapnote-result-container" class="soapnote-result-container exclude d-none mt-4">
                         <h3>Result - Copy and paste this output:</h3>
                         <textarea id="soapnote-result" class="soapnote-result exclude" cols="80" rows="12" readonly="readonly" autocomplete="off"></textarea>
