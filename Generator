@@ -794,33 +794,35 @@
                         <br>
                         <p style="color: red"></p>
                     </form>
+    <button type="submit">Calculate The Result!</button>
+    </form>
 
-               <div id="soapnote-result-container" class="d-none">
+    <div id="soapnote-result-container" class="d-none">
         <h3>Result - Copy and paste this output:</h3>
-        <div id="soapnote-result"></div>
+        <textarea id="soapnote-result-text" cols="80" rows="12" readonly="readonly"></textarea>
     </div>
 
     <script>
         // JavaScript code here
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('soapnote-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        displayFormResults();
-    });
-});
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('soapnote-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                displayFormResults();
+            });
+        });
 
-function displayFormResults() {
-    const form = document.getElementById('soapnote-form');
-    const formData = new FormData(form);
-    let result = '';
+        function displayFormResults() {
+            const form = document.getElementById('soapnote-form');
+            const formData = new FormData(form);
+            let result = '';
 
-    for (const [name, value] of formData) {
-        result += `<p><strong>${name}:</strong> ${value}</p>`;
-    }
+            for (const [name, value] of formData) {
+                result += `${name}: ${value}\n`;
+            }
 
-    document.getElementById('soapnote-result').innerHTML = result;
-    document.getElementById('soapnote-result-container').classList.remove('d-none');
-}
+            document.getElementById('soapnote-result-text').value = result;
+            document.getElementById('soapnote-result-container').classList.remove('d-none');
+        }
     </script>
 
   <input type="submit" onclick="showInput();"><br/>
