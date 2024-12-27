@@ -822,5 +822,23 @@ function displayFormResults() {
     document.getElementById('soapnote-result-container').classList.remove('d-none');
 }
     </script>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your input: </label>
+  <p><span id='display'></span></p>
+                    <div id="soapnote-result-container" class="soapnote-result-container exclude d-none mt-4">
+                        <h3>Result - Copy and paste this output:</h3>
+                        <textarea id="soapnote-result" class="soapnote-result exclude" cols="80" rows="12" readonly="readonly" autocomplete="off"></textarea>
+                        <div id="soapnote-result-buttons">
+                            <button class="btn btn-outline-secondary copybtn" title="Copy the result to Clipboard" data-bs-toggle="tooltip" data-bs-trigger="manual" data-bs-title="Copied" data-clipboard-target="#soapnote-result">Copy to Clipboard</button>
+                            <div class="dropdown d-inline-block">
+                                <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Export </button>
+                                <ul class="dropdown-menu">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 </body>
                 </html>
