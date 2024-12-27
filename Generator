@@ -3,13 +3,6 @@
     <head>
         <title>SKEMS PCR Generator</title>
     </head>
-    <script language="JavaScript">
-        function showInput() {
-            document.getElementById('display').innerHTML = 
-                        document.getElementById("user_input").value;
-        }
-      </script>
-    
 <body>
                     <form id="soapnote-form" autocomplete="off">
                         S:
@@ -801,42 +794,33 @@
                         <br>
                         <p style="color: red"></p>
                     </form>
-                    <div class="soapnote-form-buttons exclude">
-                        <button class="btn btn-outline-secondary soapnote_submit">Calculate The Result!</button>
-                        <button class="btn btn-outline-secondary soapnote_reset">Reset Form</button>
-                        <div class="dropdown d-inline-block">
-                            <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Import </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <button id="fill-csv-btn" class="btn btn-outline-secondary dropdown-item">Fill from CSV file</button>
-                                    <input type="file" name="filename" id="filename" class="d-none">
-                                </li>
-                                <li>
-                                    <button id="fill-csv-data-btn" class="btn btn-outline-secondary dropdown-item">Fill from CSV data</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-  <form>
-    <label><b>Enter a Message</b></label>
-    <input type="text" name="message" id="user_input">
-  </form>
 
-  <input type="submit" onclick="showInput();"><br/>
-  <label>Your input: </label>
-  <p><span id='display'></span></p>
-                    <div id="soapnote-result-container" class="soapnote-result-container exclude d-none mt-4">
-                        <h3>Result - Copy and paste this output:</h3>
-                        <textarea id="soapnote-result" class="soapnote-result exclude" cols="80" rows="12" readonly="readonly" autocomplete="off"></textarea>
-                        <div id="soapnote-result-buttons">
-                            <button class="btn btn-outline-secondary copybtn" title="Copy the result to Clipboard" data-bs-toggle="tooltip" data-bs-trigger="manual" data-bs-title="Copied" data-clipboard-target="#soapnote-result">Copy to Clipboard</button>
-                            <div class="dropdown d-inline-block">
-                                <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Export </button>
-                                <ul class="dropdown-menu">
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <div id="soapnote-result-container" class="d-none">
+        <h3>Result - Copy and paste this output:</h3>
+        <div id="soapnote-result"></div>
+    </div>
+
+    <script>
+        // JavaScript code here
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('soapnote-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        displayFormResults();
+    });
+});
+
+function displayFormResults() {
+    const form = document.getElementById('soapnote-form');
+    const formData = new FormData(form);
+    let result = '';
+
+    for (const [name, value] of formData) {
+        result += `<p><strong>${name}:</strong> ${value}</p>`;
+    }
+
+    document.getElementById('soapnote-result').innerHTML = result;
+    document.getElementById('soapnote-result-container').classList.remove('d-none');
+}
+    </script>
                 </body>
                 </html>
