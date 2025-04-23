@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SKEMS PCR Generator</title>
+    </head>
+<body>
+                    <form id="soapnote-form" autocomplete="off">
+                        S:
+                        <br>
+                        <span class="checkbox soapnote-input multiline" name="DISPATCH" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="DISPATCH" value="SKEMS P1 dispatched to"/>
+                                 SKEMS P1 dispatched to
+                            </label>
+                            <label>
+                                <input type="checkbox" name="DISPATCH" value="SKEMS P3 dispatched to"/>
+                                 SKEMS P3 dispatched to
+                            </label>
+                        </span>
+                        <div class="si-wrapper">
+                            <textarea class="soapnote-input textarea  dispatch" cols="60" rows="5" name="dispatch" data-type="text area"></textarea>
+                        </div>
+                        . 
+                        <br>
+                        <span class="checkbox soapnote-input multiline" name="unit" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="unit" value="P1"/>
+                                 P1
+                            </label>
+                            <label>
+                                <input type="checkbox" name="unit" value="P3"/>
+                                 P3
+                            </label>
+                        </span>
+                         arrives on scene to find
+                        <div class="si-wrapper">
+                            <textarea class="soapnote-input textarea  arrived" cols="60" rows="5" name="arrived" data-type="text area"></textarea>
+                        </div>
+                        <span class="checkbox soapnote-input multiline" name="ARRIVED" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="ARRIVED" value="UFD on scene with patient."/>
+                                 UFD on scene with patient.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="ARRIVED" value="KFD on scene with patient."/>
+                                 KFD on scene with patient.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="ARRIVED" value="SKPD on scene with patient."/>
+                                 SKPD on scene with patient.
+                            </label>
+                        </span>
+                        <br>
+                        <br>
+                        O:
+                        <br>
+                        -NEURO: 
+                        <span class="checkbox soapnote-input multiline" name="pe_neuro_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Oriented x 4, sensation intact, smile normal, and speech not slurred"/>
+                                 Oriented x 4, sensation intact, smile normal, and speech not slurred
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="LAMS 0"/>
+                                 LAMS 0
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="GCS 15 E4,V5,M6"/>
+                                 GCS 15 E4,V5,M6
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Neuro not intact"/>
+                                 Neuro not intact
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Gait abnormal"/>
+                                 Gait abnormal
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Sensation absent"/>
+                                 Sensation absent
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="No reflexes"/>
+                                 No reflexes
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Smile not symmetrical"/>
+                                 Smile not symmetrical
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Slurred speech"/>
+                                 Slurred speech
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_neuro_check" value="Unable to assess "/>
+                                 Unable to assess 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_neuro"/>
+                        <br>
+                        -MS: 
+                        <span class="checkbox soapnote-input multiline" name="MS" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="MS" value="AOx4"/>
+                                 AOx4
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="AOx3"/>
+                                 AOx3
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="AOx2"/>
+                                 AOx2
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="AOx1"/>
+                                 AOx1
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Person"/>
+                                 Person
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Place"/>
+                                 Place
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Time"/>
+                                 Time
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Event"/>
+                                 Event
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Disoriented"/>
+                                 Disoriented
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Arousable By Verbal Stimuli"/>
+                                 Arousable By Verbal Stimuli
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Arousable By Painful Stimuli"/>
+                                 Arousable By Painful Stimuli
+                            </label>
+                            <label>
+                                <input type="checkbox" name="MS" value="Unresponsive"/>
+                                 Unresponsive
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="55" name="consciousness"/>
+                        <br>
+                        -ABC: 
+                        <span class="checkbox soapnote-input multiline" name="ABC" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="ABC" value="Airway open and patent"/>
+                                 Airway open and patent
+                            </label>
+                            <label>
+                                <input type="checkbox" name="ABC" value="Breathing adequate and unlabored"/>
+                                 Breathing adequate and unlabored
+                            </label>
+                            <label>
+                                <input type="checkbox" name="ABC" value="Skin pink, warm, and dry"/>
+                                 Skin pink, warm, and dry
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="55" name="ABC"/>
+                        <br>
+                        -HEENT: 
+                        <span class="checkbox soapnote-input multiline" name="pe_heent_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Eyes PERRL"/>
+                                 Eyes PERRL
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Head,neck,face,and scalp unremarkable"/>
+                                 Head,neck,face,and scalp unremarkable
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="No bleeding, No trauma to face or mouth"/>
+                                 No bleeding, No trauma to face or mouth
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Bleeding"/>
+                                 Bleeding
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Positive halo test"/>
+                                 Positive halo test
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Negative halo test"/>
+                                 Negative halo test
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Dry mucous membranes"/>
+                                 Dry mucous membranes
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Extra salivation"/>
+                                 Extra salivation
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Trauma to face"/>
+                                 Trauma to face
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_heent_check" value="Trauma to mouth "/>
+                                 Trauma to mouth 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_heent"/>
+                        <br>
+                        -NECK: 
+                        <span class="checkbox soapnote-input multiline" name="neck" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="neck" value="Trachea midline"/>
+                                 Trachea midline
+                            </label>
+                            <label>
+                                <input type="checkbox" name="neck" value="Trachea shifted right"/>
+                                 Trachea shifted right
+                            </label>
+                            <label>
+                                <input type="checkbox" name="neck" value="Trachea shifted left"/>
+                                 Trachea shifted left
+                            </label>
+                            <label>
+                                <input type="checkbox" name="neck" value="JVD present"/>
+                                 JVD present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="neck" value="No JVD "/>
+                                 No JVD 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="neck"/>
+                        <br>
+                        -PULM: 
+                        <span class="checkbox soapnote-input multiline" name="pe_resp_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Clear to auscultation bilaterally, adequate and unlabored"/>
+                                 Clear to auscultation bilaterally, adequate and unlabored
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Wheezing"/>
+                                 Wheezing
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Rales"/>
+                                 Rales
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Rhonchi"/>
+                                 Rhonchi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Stridor"/>
+                                 Stridor
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Upper respiratory congestion"/>
+                                 Upper respiratory congestion
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Non-productive cough"/>
+                                 Non-productive cough
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_resp_check" value="Productive cough "/>
+                                 Productive cough 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_resp"/>
+                        <br>
+                        -CHEST:
+                        <span class="checkbox soapnote-input multiline" name="chest" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="chest" value="Equal chest rise and fall"/>
+                                 Equal chest rise and fall
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="No dyspnea"/>
+                                 No dyspnea
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="Mild dyspnea"/>
+                                 Mild dyspnea
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="Moderate dyspnea"/>
+                                 Moderate dyspnea
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="Severe dyspnea"/>
+                                 Severe dyspnea
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="Paradoxical movement"/>
+                                 Paradoxical movement
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="Pneumothorax"/>
+                                 Pneumothorax
+                            </label>
+                            <label>
+                                <input type="checkbox" name="chest" value="Hemothorax"/>
+                                 Hemothorax
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="chest"/>
+                        <br>
+                        -CARDIOVASCULAR: 
+                        <span class="checkbox soapnote-input multiline" name="pe_cardio_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="Peripheral pulses intact"/>
+                                 Peripheral pulses intact
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="Irregular rate"/>
+                                 Irregular rate
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="Irregular rhythm"/>
+                                 Irregular rhythm
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="ST elevation present"/>
+                                 ST elevation present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="JVD present"/>
+                                 JVD present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="Edema present"/>
+                                 Edema present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="No peripheral pulses"/>
+                                 No peripheral pulses
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="Cyanosis present"/>
+                                 Cyanosis present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_cardio_check" value="Bleeding "/>
+                                 Bleeding 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_cardio"/>
+                        <br>
+                        -ABD: 
+                        <span class="checkbox soapnote-input multiline" name="pe_abd" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Atraumatic, abdomen soft/non-tender to palpation"/>
+                                 Atraumatic, abdomen soft/non-tender to palpation
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Trauma present"/>
+                                 Trauma present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Tender abdomen"/>
+                                 Tender abdomen
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Rigid abdomen"/>
+                                 Rigid abdomen
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Distended abdomen"/>
+                                 Distended abdomen
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Guarding present"/>
+                                 Guarding present
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_abd" value="Masses present "/>
+                                 Masses present 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_abd"/>
+                        <br>
+                        -GI/GU: 
+                        <span class="checkbox soapnote-input multiline" name="pe_gi_gu" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_gi_gu" value="Unremarkable"/>
+                                 Unremarkable
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_gi_gu" value="Continent"/>
+                                 Continent
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_gi_gu" value="Incontinent"/>
+                                 Incontinent
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_gi_gu"/>
+                        <br>
+                        -MSK: 
+                        <span class="checkbox soapnote-input multiline" name="pe_msk_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_msk_check" value="Atraumatic, CSMs present in all extremities"/>
+                                 Atraumatic, CSMs present in all extremities
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_msk_check" value="Abnormal range of motion"/>
+                                 Abnormal range of motion
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_msk_check" value="Pain on palpation"/>
+                                 Pain on palpation
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_msk_check" value="Strength not present in all extremities"/>
+                                 Strength not present in all extremities
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_msk_check" value="Unable to assess"/>
+                                 Unable to assess
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_msk"/>
+                        <br>
+                        <span class="checkbox soapnote-input " name="frt" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="frt" value=""/>
+                            </label>
+                            <span class="memo exclude memo-black memo-medium">EKG</span>
+                        </span>
+                        <span id="conditional_571466a238ab0ffd8" class="conditional hidden" data-fields="frt" data-condition="(frt).is('')" data-type="conditional">
+                            -EKG: 
+                            <span class="checkbox soapnote-input multiline" name="EKG" data-type="checkboxes">
+                                <label>
+                                    <input type="checkbox" name="EKG" value="4 Lead ECG obtained"/>
+                                     4 Lead ECG obtained
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="&; 12 Lead ECG obtained"/>
+                                     &; 12 Lead ECG obtained
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Manual interpretation"/>
+                                     Manual interpretation
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Computer interpretation"/>
+                                     Computer interpretation
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="STEMI"/>
+                                     STEMI
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Sinus Rhythm"/>
+                                     Sinus Rhythm
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Paced Rhythm"/>
+                                     Paced Rhythm
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Sinus Bradycardia"/>
+                                     Sinus Bradycardia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Sinus Tachycardia"/>
+                                     Sinus Tachycardia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Sinus Arrhythmia"/>
+                                     Sinus Arrhythmia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Wandering Atrial Pacemaker"/>
+                                     Wandering Atrial Pacemaker
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Multifocal Atrial Tachycardia"/>
+                                     Multifocal Atrial Tachycardia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="A-Fib"/>
+                                     A-Fib
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="A-Fib w/ RVR"/>
+                                     A-Fib w/ RVR
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Supraventricular Tachycardia"/>
+                                     Supraventricular Tachycardia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Atrial Flutter"/>
+                                     Atrial Flutter
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Junctional Rhythm"/>
+                                     Junctional Rhythm
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="RBBB"/>
+                                     RBBB
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="LBBB"/>
+                                     LBBB
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="First Degree AV Block"/>
+                                     First Degree AV Block
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Second Degree Type 1"/>
+                                     Second Degree Type 1
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Second Degree Type 2"/>
+                                     Second Degree Type 2
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="3rd Degree Block"/>
+                                     3rd Degree Block
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="IVR"/>
+                                     IVR
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Accelerated IVR"/>
+                                     Accelerated IVR
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="V-Tach"/>
+                                     V-Tach
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="V-Fib"/>
+                                     V-Fib
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Asystole"/>
+                                     Asystole
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="PEA"/>
+                                     PEA
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="Torsades"/>
+                                     Torsades
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="w/ PVC's"/>
+                                     w/ PVC's
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="w/ PAC's"/>
+                                     w/ PAC's
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="EKG" value="w/ PJC's "/>
+                                     w/ PJC's 
+                                </label>
+                            </span>
+                            <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="ros_heme"/>
+                        </span>
+                        <br>
+                        <span class="checkbox soapnote-input " name="fra" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="fra" value=""/>
+                            </label>
+                            <span class="memo exclude memo-black memo-medium">Interventions</span>
+                        </span>
+                        <span id="conditional_214566a238ab10052" class="conditional hidden" data-fields="fra" data-condition="(fra).is('')" data-type="conditional">
+                            -Interventions:
+                            <select class="soapnote-input select" name="Gauge" data-type="drop down">
+                                <option value="24G">24G</option>
+                                <option value="22G">22G</option>
+                                <option value="20G">20G</option>
+                                <option value="18G">18G</option>
+                                <option value="16G">16G</option>
+                                <option value="14G">14G</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Yellow">Yellow</option>
+                                <option value="Pink">Pink</option>
+                            </select>
+                            <select class="soapnote-input select" name="iv_io" data-type="drop down">
+                                <option value="IV">IV</option>
+                                <option value="IO">IO</option>
+                                <option value="EJ">EJ</option>
+                            </select>
+                             attempted 
+                            <select class="soapnote-input select" name="L_R" data-type="drop down">
+                                <option value="L">L</option>
+                                <option value="R">R</option>
+                            </select>
+                            <select class="soapnote-input select" name="site" data-type="drop down">
+                                <option value="AC">AC</option>
+                                <option value="Forearm">Forearm</option>
+                                <option value="Wrist">Wrist</option>
+                                <option value="Finger">Finger</option>
+                                <option value="Proximal Tibia">Proximal Tibia</option>
+                                <option value="Humeral head">Humeral head</option>
+                                <option value="Bicep">Bicep</option>
+                            </select>
+                            , 
+                            <select class="soapnote-input select" name="success" data-type="drop down">
+                                <option value="Successful.">Successful.</option>
+                                <option value="Unsuccessful.">Unsuccessful.</option>
+                            </select>
+                            <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="interventions"/>
+                        </span>
+                        <br>
+                        <br>
+                        A: 
+                        <input class="soapnote-input text" type="text" value="" data-type="text box" size="15" name="assessment"/>
+                        <br>
+                        <br>
+                        P:
+                        <br>
+                        <span class="checkbox soapnote-input multiline" name="treatment" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="treatment" value="Primary and secondary assessment complete."/>
+                                 Primary and secondary assessment complete.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="treatment" value="Continuous cardiac monitoring."/>
+                                 Continuous cardiac monitoring.
+                            </label>
+                        </span>
+                        <div class="si-wrapper">
+                            <textarea class="soapnote-input textarea  rxt" cols="60" rows="5" name="rxt" data-type="text area"></textarea>
+                        </div>
+                        <br>
+                        <span class="checkbox soapnote-input multiline" name="pe_trans_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Secured patient to stretcher via 5-point seatbelt harness,"/>
+                                 Secured patient to stretcher via 5-point seatbelt harness,
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="loaded into ambulance for transport."/>
+                                 loaded into ambulance for transport.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Emergency"/>
+                                 Emergency
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Non-emergency"/>
+                                 Non-emergency
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Non-emergency upgraded to emergency"/>
+                                 Non-emergency upgraded to emergency
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Patient refused transport"/>
+                                 Patient refused transport
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="AMA"/>
+                                 AMA
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Transported ALS"/>
+                                 Transported ALS
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_trans_check" value="Transported BLS"/>
+                                 Transported BLS
+                            </label>
+                        </span>
+                         to 
+                        <select class="soapnote-input select" name="variable_hospital" data-type="drop down">
+                            <option value=""></option>
+                            <option value="South County Hospital.">South County Hospital.</option>
+                            <option value="Westerly Hospital.">Westerly Hospital.</option>
+                            <option value="Kent County Hospital.">Kent County Hospital.</option>
+                            <option value="Rhode Island Hospital.">Rhode Island Hospital.</option>
+                            <option value="Hasbro Hospital.">Hasbro Hospital.</option>
+                            <option value="Newport Hospital.">Newport Hospital.</option>
+                            <option value="Women&Infants Hospital.">Women&Infants Hospital.</option>
+                        </select>
+                        <br>
+                        <span class="checkbox soapnote-input multiline" name="choice" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="choice" value="per patient request"/>
+                                 per patient request
+                            </label>
+                            <label>
+                                <input type="checkbox" name="choice" value="per family request"/>
+                                 per family request
+                            </label>
+                            <label>
+                                <input type="checkbox" name="choice" value="per SKEMS crew member discretion as closest appropriate facility"/>
+                                 per SKEMS crew member discretion as closest appropriate facility
+                            </label>
+                            <label>
+                                <input type="checkbox" name="choice" value="per Med Control recommendation"/>
+                                 per Med Control recommendation
+                            </label>
+                        </span>
+                        <br>
+                        <span class="checkbox soapnote-input multiline" name="pe_rep_check" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="Transferred care to RN "/>
+                                 Transferred care to RN 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="in bed "/>
+                                 in bed 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="without incident."/>
+                                 without incident.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="P1 returns to service."/>
+                                 P1 returns to service.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="P3 returns to service."/>
+                                 P3 returns to service.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="Patient belongings left with nurse"/>
+                                 Patient belongings left with nurse
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="Patient belongings left with patient/family"/>
+                                 Patient belongings left with patient/family
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="Improvement in patient condition"/>
+                                 Improvement in patient condition
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="Decline in patient condition"/>
+                                 Decline in patient condition
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pe_rep_check" value="No change in patient condition "/>
+                                 No change in patient condition 
+                            </label>
+                        </span>
+                        <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="pe_rep"/>
+                        <br>
+                        <span class="checkbox soapnote-input " name="fro" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="fro" value=""/>
+                            </label>
+                            <span class="memo exclude memo-black memo-medium">Signatures</span>
+                        </span>
+                        <span id="conditional_642866a238ab100b2" class="conditional hidden" data-fields="fro" data-condition="(fro).is('')" data-type="conditional">
+                            Signature: 
+                            <span class="checkbox soapnote-input multiline" name="Signature" data-type="checkboxes">
+                                <label>
+                                    <input type="checkbox" name="Signature" value="not obtained from patient."/>
+                                     not obtained from patient.
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Signature" value="obtained from guardian/POA."/>
+                                     obtained from guardian/POA.
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Signature" value="obtained from receiving facility nurse."/>
+                                     obtained from receiving facility nurse.
+                                </label>
+                            </span>
+                            <input class="soapnote-input text" type="text" value=" " data-type="text box" size="15" name="sig"/>
+                        </span>
+                        <br>
+                        <span class="checkbox soapnote-input " name="AMA" data-type="checkboxes">
+                            <label>
+                                <input type="checkbox" name="AMA" value="EMS performed an evaluation of the patient to the extent permitted. Efforts were made to encourage the patient to consent to continued EMS evaluation, treatment, and transport to the hospital for further assessment.<br><br>The patient was found to be alert and oriented to person, place, time, and event (AOx4), not under the influence of drugs or alcohol, of legal age, and able to make competent decisions. Despite persistent efforts by EMS, the patient firmly declined further evaluation, treatment, and transport against medical advice.<br><br>EMS informed the patient of the potential risks associated with refusal of care, including but not limited to, death and/or disability. The patient acknowledged understanding of these risks but maintained their decision to refuse. The patient was advised that they are free to call 911 if their condition worsens or if they decide to seek transport to the emergency department for further evaluation and treatment."/>
+                                 EMS performed an evaluation of the patient to the extent permitted. Efforts were made to encourage the patient to consent to continued EMS evaluation, treatment, and transport to the hospital for further assessment.
+                                <br>
+                                <br>
+                                The patient was found to be alert and oriented to person, place, time, and event (AOx4), not under the influence of drugs or alcohol, of legal age, and able to make competent decisions. Despite persistent efforts by EMS, the patient firmly declined further evaluation, treatment, and transport against medical advice.
+                                <br>
+                                <br>
+                                EMS informed the patient of the potential risks associated with refusal of care, including but not limited to, death and/or disability. The patient acknowledged understanding of these risks but maintained their decision to refuse. The patient was advised that they are free to call 911 if their condition worsens or if they decide to seek transport to the emergency department for further evaluation and treatment.
+                            </label>
+                        </span>
+                        <br>
+                        <p style="color: red"></p>
+                    </form>
+    <button type="submit">Calculate The Result!</button>
+    </form>
+
+    <div id="soapnote-result-container" class="d-none">
+        <h3>Result - Copy and paste this output:</h3>
+        <textarea id="soapnote-result-text" cols="80" rows="12" readonly="readonly"></textarea>
+    </div>
+
+    <script>
+        // JavaScript code here
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('soapnote-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                displayFormResults();
+            });
+        });
+
+        function displayFormResults() {
+            const form = document.getElementById('soapnote-form');
+            const formData = new FormData(form);
+            let result = '';
+
+            for (const [name, value] of formData) {
+                result += `${name}: ${value}\n`;
+            }
+
+            document.getElementById('soapnote-result-text').value = result;
+            document.getElementById('soapnote-result-container').classList.remove('d-none');
+        }
+    </script>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your input: </label>
+  <p><span id='display'></span></p>
+                    <div id="soapnote-result-container" class="soapnote-result-container exclude d-none mt-4">
+                        <h3>Result - Copy and paste this output:</h3>
+                        <textarea id="soapnote-result" class="soapnote-result exclude" cols="80" rows="12" readonly="readonly" autocomplete="off"></textarea>
+                        <div id="soapnote-result-buttons">
+                            <button class="btn btn-outline-secondary copybtn" title="Copy the result to Clipboard" data-bs-toggle="tooltip" data-bs-trigger="manual" data-bs-title="Copied" data-clipboard-target="#soapnote-result">Copy to Clipboard</button>
+                            <div class="dropdown d-inline-block">
+                                <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Export </button>
+                                <ul class="dropdown-menu">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </body>
+                </html>
